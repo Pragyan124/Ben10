@@ -1,0 +1,30 @@
+.section {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    scroll-snap-align: start; /* Snap effect for scrolling */
+  }
+
+ 
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(77, 53, 201, 0.5); /* Semi-transparent color for the scrollbar thumb */
+    border-radius: 6px; /* Round the edges */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0); /* Fully transparent track */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Use 'thin' for a slimmer scrollbar */
+    scrollbar-color: rgba(77, 53, 201, 0.5) rgba(0, 0, 0, 0); /* Semi-transparent scrollbar thumb and transparent track */
+  }
+
+
