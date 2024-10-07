@@ -1,10 +1,10 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-
+import helloModel from './assets/hello.glb';
 
 function Model({ url }) {
-  const { scene } = useGLTF(url); // Load the .glb model
+  const { scene } = useGLTF(helloModel); // Load the .glb model
   return <primitive object={scene} scale={2} />; // Render the model
 }
 
@@ -18,7 +18,7 @@ function Landing() {
         {/* Load the 3D Model */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 5, 5]} intensity={1} />
-        <Model url="src/assets/hello.glb" />
+        <Model />
         <OrbitControls enableZoom={true} />
       </Canvas>
     </div>
