@@ -12,7 +12,7 @@ function Alien3 () {
   return (
     <div className="fixed h-screen w-full bg-gradient-to-b from-black to-[black]"style={{ height: '100vh' }}>
     <div className="flex-grow" />
-    <h1 className='relative text-center mt-40 text-shadow-xl  opacity-50  text-[100px]  text-[#e2e6d8] font-protest-strike'>GHOST FREAK</h1>
+    <h1 className='relative text-center mt-40 mb-20 text-shadow-xl  opacity-50   sm:text-[30px] md:text-[50px] lg:text-[100px] text-[#e2e6d8] font-protest-strike'>GHOST FREAK</h1>
 
 
 
@@ -21,7 +21,7 @@ function Alien3 () {
         {/* Load the 3D Model */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 5, 5]} intensity={50} />
-        <Model url="/alien3.glb" />
+        <Model url="src/assets/alien3.glb" />
         <OrbitControls enableZoom={true} />
       </Canvas>
     </div>

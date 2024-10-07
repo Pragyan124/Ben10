@@ -12,13 +12,13 @@ function Landing() {
   return (
     <div className="fixed h-screen w-full bg-gradient-to-b from-[#5ee226] to-black"style={{ height: '100vh' }}>
      
-      <h1 className='relative text-center mt-40 text-shadow-xl  opacity-50  text-[100px]  text-[#13d66e] font-protest-strike'> Ben 10 Alien Force</h1>
+      <h1 className='relative text-center mt-40  text-shadow-xl  opacity-50  text-[100px]  text-[	#b3b300] font-protest-strike'> Ben 10 Alien Force</h1>
      
       <Canvas className="absolute -top-40">
         {/* Load the 3D Model */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 5, 5]} intensity={1} />
-        <Model url="/hello.glb" />
+        <Model url="src/assets/hello.glb" />
         <OrbitControls enableZoom={true} />
       </Canvas>
     </div>
