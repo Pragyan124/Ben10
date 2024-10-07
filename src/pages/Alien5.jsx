@@ -1,11 +1,12 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
+import alien5Model from '../assets/alien5.glb';
 
 
-function Model({ url }) {
-  const { scene } = useGLTF(url); // Load the .glb model
-  return <primitive object={scene} scale={0.7} />; // Render the model
+function Model() {
+  const { scene } = useGLTF(alien5Model); // Load the .glb model
+  return <primitive object={scene} scale={1}  />; // Render the model
 }
 
 function Alien5() {
@@ -20,7 +21,7 @@ function Alien5() {
         {/* Load the 3D Model */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 5, 5]} intensity={1} />
-        <Model url="src/assets/alien5.glb" />
+        <Model />
         <OrbitControls enableZoom={true} />
       </Canvas>
     </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import helloModel from './assets/hello.glb';
+import helloModel from '../assets/hello.glb';
 
-function Model({ url }) {
+function Model() {
   const { scene } = useGLTF(helloModel); // Load the .glb model
   return <primitive object={scene} scale={2} />; // Render the model
 }
